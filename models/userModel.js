@@ -1,14 +1,22 @@
-const Joi = require("joi")
+const config = require("config");
+const Joi = require("joi");
+const jwt = require("jsonwebtoken");
 
 class User {
-  constructor(name, username, email, password, verifyPassword, phoneNumber) {
+  constructor(name, username, email, password, verifyPassword, phoneNumber, isLoggedIn) {
     this.name = name;
     this.username = username;
     this.email = email;
     this.password = password;
     this.verifyPassword = verifyPassword;
     this.phoneNumber = phoneNumber;
+    this.isLoggedIn = isLoggedIn;
   }
+
+  authenticateUser() {
+    this.isLoggedIn = true;
+  }
+
 }
 
 
@@ -43,5 +51,5 @@ function validateUser(user) {
   return Joi.validate(user, schema)
 }
 
-exports.User = User
-exports.validate = validateUser
+exports.User = User;
+exports.validate = validateUser;
