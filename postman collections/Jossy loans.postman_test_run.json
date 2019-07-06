@@ -1,0 +1,204 @@
+{
+	"id": "0fa0ebd6-68d7-48ba-91e9-d7a28463ede3",
+	"name": "Jossy loans",
+	"allTests": [],
+	"timestamp": "2019-07-06T07:50:20.603Z",
+	"collection_id": "8566d13f-6879-46e0-b226-dec872455b0c",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 10,
+	"count": 2,
+	"collection": {
+		"id": "8566d13f-6879-46e0-b226-dec872455b0c",
+		"name": "Jossy loans",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [],
+		"folders_order": [
+			"6de2ef83-bd39-49c9-8d62-12678dbd78b5",
+			"80178cd2-73d3-411f-8803-2adb94814914"
+		],
+		"owner": "7233922",
+		"favorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "http://localhost:3000/api/loans",
+			"id": "9d72c494-6070-4a80-a389-e37ced636ac2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"57",
+				"14"
+			],
+			"allTests": [
+				{},
+				{}
+			],
+			"time": "14",
+			"totalRequestTime": 71,
+			"iterationResults": {}
+		},
+		{
+			"name": "http://localhost:3000/api/users/register",
+			"id": "2e1d138a-f5be-48e9-b0ab-e8b5d35271e3",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"120",
+				"7"
+			],
+			"allTests": [
+				{},
+				{}
+			],
+			"time": "7",
+			"totalRequestTime": 127,
+			"iterationResults": {}
+		},
+		{
+			"name": "http://localhost:3000/api/users/login",
+			"id": "235043cb-ac1c-4527-b193-ca1606b99ed1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"7",
+				"8"
+			],
+			"allTests": [
+				{},
+				{}
+			],
+			"time": "8",
+			"totalRequestTime": 15,
+			"iterationResults": {}
+		},
+		{
+			"name": "http://localhost:3000/api/loans/apply",
+			"id": "a9879ba6-fcfe-42bc-82f2-290d81ccad1f",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"79",
+				"113"
+			],
+			"allTests": [
+				{},
+				{}
+			],
+			"time": "113",
+			"totalRequestTime": 192,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 405,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "http://localhost:3000/api/loans",
+			"id": "9d72c494-6070-4a80-a389-e37ced636ac2",
+			"url": "http://localhost:3000/api/loans",
+			"time": "14",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "http://localhost:3000/api/users/register",
+			"id": "2e1d138a-f5be-48e9-b0ab-e8b5d35271e3",
+			"url": "http://localhost:3000/api/users/register",
+			"time": "7",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "http://localhost:3000/api/users/login",
+			"id": "235043cb-ac1c-4527-b193-ca1606b99ed1",
+			"url": "http://localhost:3000/api/users/login",
+			"time": "8",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "http://localhost:3000/api/loans/apply",
+			"id": "a9879ba6-fcfe-42bc-82f2-290d81ccad1f",
+			"url": "http://localhost:3000/api/loans/apply",
+			"time": "113",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
