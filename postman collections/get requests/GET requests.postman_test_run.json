@@ -1,0 +1,95 @@
+{
+	"id": "d3a767db-4423-4db7-a0cd-409399dcc45d",
+	"name": "GET requests",
+	"allTests": [],
+	"timestamp": "2019-07-06T07:35:34.661Z",
+	"collection_id": "8566d13f-6879-46e0-b226-dec872455b0c",
+	"folder_id": "6de2ef83-bd39-49c9-8d62-12678dbd78b5",
+	"target_type": "folder",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 2,
+	"collection": {
+		"id": "8566d13f-6879-46e0-b226-dec872455b0c",
+		"name": "Jossy loans",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [],
+		"folders_order": [
+			"6de2ef83-bd39-49c9-8d62-12678dbd78b5",
+			"80178cd2-73d3-411f-8803-2adb94814914"
+		],
+		"owner": "7233922",
+		"favorite": false
+	},
+	"folder": {
+		"id": "6de2ef83-bd39-49c9-8d62-12678dbd78b5",
+		"name": "GET requests",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"collection": "8566d13f-6879-46e0-b226-dec872455b0c",
+		"folder": null,
+		"order": [
+			"9d72c494-6070-4a80-a389-e37ced636ac2"
+		],
+		"folders_order": [],
+		"type": "folder",
+		"depth": 1
+	},
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "http://localhost:3000/api/loans",
+			"id": "9d72c494-6070-4a80-a389-e37ced636ac2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"8",
+				"5"
+			],
+			"allTests": [
+				{},
+				{}
+			],
+			"time": "5",
+			"totalRequestTime": 13,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 13,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "http://localhost:3000/api/loans",
+			"id": "9d72c494-6070-4a80-a389-e37ced636ac2",
+			"url": "http://localhost:3000/api/loans",
+			"time": "5",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
